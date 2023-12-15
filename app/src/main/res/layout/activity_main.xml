@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvBrowse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/dp20"
+        android:text="Browse Stocks"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp35"/>
+    <ImageView
+        android:src="@drawable/icon_search"
+        android:id="@+id/mgvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvBrowse"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="130dp"/>
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="80dp"
+         android:layout_marginStart="@dimen/dp30"
+         android:layout_marginEnd="@dimen/dp30"
+         app:layout_constraintTop_toBottomOf="@+id/tvBrowse"
+         app:layout_constraintBottom_toBottomOf="parent">
+<!--         Apple-->
+         <TextView
+             android:id="@+id/textViewApple"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             app:layout_constraintWidth_percent="0.35"
+             app:layout_constraintHeight_percent="0.17"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:background="@drawable/custom_item_apple"
+             android:paddingTop="80dp"
+             android:paddingStart="@dimen/dp20"
+             android:text="AAPL\n $ 364.11"
+
+             android:textColor="@color/white" />
+
+         <ImageView
+             android:id="@+id/imageViewApple"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:srcCompat="@drawable/icon_apple"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:layout_marginStart="@dimen/dp20"
+             android:layout_marginTop="10dp"/>
+<!--         M -->
+         <TextView
+             android:id="@+id/textViewM"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             app:layout_constraintWidth_percent="0.55"
+             app:layout_constraintHeight_percent="0.17"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintLeft_toRightOf="@+id/textViewApple"
+             android:background="@drawable/custom_m"
+             android:layout_marginStart="25dp"
+             android:paddingTop="80dp"
+             android:paddingStart="@dimen/dp30"
+             android:text="MCD\n$183.52"
+             android:textColor="@color/white" />
+
+         <ImageView
+             android:id="@+id/imageViewM"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:srcCompat="@drawable/icon_mcdonalds"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toStartOf="@+id/textViewM"
+             android:layout_marginStart="@dimen/dp20"
+             android:layout_marginTop="10dp"/>
+<!--         Tw-->
+
+         <!--Nike-->
+         <TextView
+             android:id="@+id/textViewTwister"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:layout_marginTop="16dp"
+             android:background="@drawable/custom_tweeter"
+             android:paddingStart="@dimen/dp30"
+             android:paddingTop="180dp"
+             android:text="TWTR\n$ 30.87"
+             android:textColor="@color/white"
+             app:layout_constraintHeight_percent="0.36"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/textViewApple"
+             app:layout_constraintWidth_percent="0.55" />
+
+         <ImageView
+             android:id="@+id/imageViewTwister"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/dp30"
+             android:layout_marginStart="@dimen/dp20"
+             app:layout_constraintTop_toBottomOf="@id/textViewApple"
+             app:layout_constraintStart_toStartOf="@id/textViewTwister"
+             app:srcCompat="@drawable/icon_twitter" />
+
+         <TextView
+             android:id="@+id/textViewNike"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             app:layout_constraintWidth_percent="0.35"
+             app:layout_constraintHeight_percent="0.17"
+             app:layout_constraintTop_toBottomOf="@id/textViewM"
+             app:layout_constraintLeft_toRightOf="@id/textViewTwister"
+             android:layout_marginTop="16dp"
+             android:layout_marginStart="25dp"
+             android:background="@drawable/custom_nike"
+             android:paddingTop="70dp"
+             android:paddingStart="@dimen/dp20"
+             android:text="NIKE\n$177.21"
+             android:textColor="@color/white" />
+
+         <ImageView
+             android:id="@+id/imageViewNike"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:srcCompat="@drawable/icon_nike"
+             app:layout_constraintTop_toBottomOf="@id/textViewM"
+             app:layout_constraintStart_toStartOf="@id/textViewNike"
+             android:layout_marginStart="@dimen/dp20"
+             android:layout_marginTop="25dp"/>
+<!--         PYPL-->
+         <TextView
+             android:id="@+id/textViewPyPl"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             app:layout_constraintWidth_percent="0.35"
+             app:layout_constraintHeight_percent="0.17"
+             app:layout_constraintTop_toBottomOf="@id/textViewNike"
+             app:layout_constraintLeft_toRightOf="@id/textViewTwister"
+             android:layout_marginTop="16dp"
+             android:layout_marginStart="25dp"
+             android:background="@drawable/custom_paypal"
+             android:paddingTop="70dp"
+             android:paddingStart="@dimen/dp20"
+             android:text="PYPL\n$ 177.21"
+             android:textColor="@color/white" />
+
+         <ImageView
+             android:id="@+id/imageViewPyPl"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:srcCompat="@drawable/icon_paypal"
+             app:layout_constraintTop_toBottomOf="@id/textViewNike"
+             app:layout_constraintStart_toStartOf="@id/textViewPyPl"
+             android:layout_marginStart="@dimen/dp20"
+             android:layout_marginTop="25dp"/>
+<!--         Lyft-->
+         <TextView
+             android:id="@+id/textViewLyft"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:layout_marginTop="10dp"
+             app:layout_constraintHeight_percent="0.2"
+             app:layout_constraintWidth_percent="0.97"
+             app:layout_constraintTop_toBottomOf="@id/textViewPyPl"
+             app:layout_constraintStart_toStartOf="parent"
+             android:text="LYFT\n$31.82"
+             android:textColor="@color/white"
+             android:paddingTop="70dp"
+             android:paddingStart="@dimen/dp20"
+             android:background="@drawable/custom_lyr"/>
+         <ImageView
+             android:layout_width="32dp"
+             android:layout_height="32dp"
+             app:layout_constraintStart_toStartOf="@id/textViewLyft"
+             app:layout_constraintTop_toBottomOf="@+id/textViewPyPl"
+             android:layout_marginTop="@dimen/dp20"
+             android:layout_marginStart="@dimen/dp20"
+             android:src="@drawable/lyft"/>
+<!--         a and in-->
+
+         <TextView
+             android:id="@+id/textViewA"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:layout_marginTop="12dp"
+             android:background="@drawable/custom_a"
+             android:paddingStart="@dimen/dp20"
+             android:paddingTop="50dp"
+             android:text="AAPL\n$ 364.11"
+             android:textColor="@color/white"
+             app:layout_constraintHeight_percent="0.15"
+             app:layout_constraintTop_toBottomOf="@+id/textViewLyft"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintWidth_percent="0.35"
+             tools:layout_editor_absoluteX="0dp" />
+
+         <ImageView
+             android:id="@+id/imageViewA"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="@dimen/dp20"
+             app:layout_constraintTop_toBottomOf="@id/textViewLyft"
+             app:layout_constraintStart_toStartOf="@id/textViewA"
+             app:srcCompat="@drawable/icon_a" />
+
+         <TextView
+             android:id="@+id/textViewIn"
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:layout_marginTop="12dp"
+             app:layout_constraintWidth_percent="0.55"
+             app:layout_constraintHeight_percent="0.15"
+             app:layout_constraintTop_toBottomOf="@+id/textViewLyft"
+             app:layout_constraintLeft_toRightOf="@+id/textViewA"
+             android:background="@drawable/custom_in"
+             android:layout_marginStart="25dp"
+             android:paddingTop="50dp"
+             android:paddingStart="@dimen/dp20"
+             android:text="AAPL\n $ 364.11"
+             android:textColor="@color/white" />
+
+         <ImageView
+             android:id="@+id/imageViewIn"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             app:layout_constraintTop_toBottomOf="@+id/textViewLyft"
+             app:layout_constraintStart_toStartOf="@+id/textViewIn"
+             android:src="@drawable/icon_in"
+             android:layout_marginStart="20dp"
+             android:layout_marginTop="20dp"/>
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--  <TextView
+          android:id="@+id/button1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Button 1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+          android:id="@+id/button2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Button 2"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Hello World!"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/button1" />
+  -->
+</androidx.constraintlayout.widget.ConstraintLayout>

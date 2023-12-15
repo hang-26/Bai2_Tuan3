@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ViewLinerLayoutActivity">
+
+    <TextView
+        android:id="@+id/textViewBrowse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp20"
+        android:text="Browse Stocks"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imageViewSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_search"
+        android:layout_alignRight="@+id/textViewBrowse"
+        android:layout_marginTop="@dimen/dp20"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp20"
+        android:layout_below="@+id/textViewBrowse">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/custom_item_apple">
+                <ImageView
+                    android:id="@+id/imageIconApple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_apple"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginStart="@dimen/dp20"/>
+                <TextView
+                    android:id="@+id/textApple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APLL\n $336.87"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/imageIconApple"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp20"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_marginStart="@dimen/dp20"
+                android:background="@drawable/custom_m">
+                <ImageView
+                    android:id="@+id/imageIconM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:src="@drawable/icon_m"/>
+                <TextView
+                    android:id="@+id/textM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APLL\n $336.87"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/imageIconM"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp20"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_weight="2">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/custom_tweeter">
+                <ImageView
+                    android:id="@+id/imageIconTwister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:src="@drawable/icon_twitter"/>
+
+                <TextView
+                    android:id="@+id/textTwister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageIconTwister"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_marginTop="130dp"
+                    android:text="TWTR\n $30.87"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/dp20">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_nike">
+                    <ImageView
+                        android:id="@+id/imageIconNike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/icon_nike"/>
+
+                    <TextView
+                        android:id="@+id/textNike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageIconNike"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginTop="20dp"
+                        android:text="TWTR\n $30.87"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/custom_paypal">
+                    <ImageView
+                        android:id="@+id/imageIconPapal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/icon_nike"/>
+
+                    <TextView
+                        android:id="@+id/textPaPal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageIconPapal"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginTop="20dp"
+                        android:text="TWTR\n $30.87"
+                        android:textColor="@color/white" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_lyr"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageIconLyft"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/lyft"/>
+
+            <TextView
+                android:id="@+id/textLyft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/dp20"
+                android:text="TWTR\n $30.87"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp10">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/custom_a">
+                <ImageView
+                    android:id="@+id/imageIconA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_a"/>
+
+                <TextView
+                    android:id="@+id/textA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageIconA"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_marginTop="20dp"
+                    android:text="TWTR\n $30.87"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_marginStart="@dimen/dp20"
+                android:background="@drawable/custom_in">
+                <ImageView
+                    android:id="@+id/imageIconIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_in"/>
+
+                <TextView
+                    android:id="@+id/textIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageIconIn"
+                    android:layout_marginStart="@dimen/dp20"
+                    android:layout_marginTop="20dp"
+                    android:text="TWTR\n $30.87"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
